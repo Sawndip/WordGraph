@@ -1,0 +1,140 @@
+
+{
+	"nodes" : 
+	[
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "was"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "had"
+				}
+			],
+			"word" : "Mary"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "Mary"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "a"
+				}
+			],
+			"word" : "was"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "was"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "had"
+				},
+				
+				{
+					"count" : 2,
+					"type" : "next",
+					"word" : "little"
+				}
+			],
+			"word" : "a"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 2,
+					"type" : "prev",
+					"word" : "a"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "girl"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "lamb"
+				}
+			],
+			"word" : "little"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "little"
+				}
+			],
+			"word" : "girl"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "Mary"
+				},
+				
+				{
+					"count" : 1,
+					"type" : "next",
+					"word" : "a"
+				}
+			],
+			"word" : "had"
+		},
+		
+		{
+			"outgoing" : 
+			[
+				
+				{
+					"count" : 1,
+					"type" : "prev",
+					"word" : "little"
+				}
+			],
+			"word" : "lamb"
+		}
+	]
+}
+
