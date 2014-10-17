@@ -9,4 +9,5 @@ Doc 1: "Mary had a little lamb"
 Doc 2: "Mary was a little girl"
 
 Graph:
-[image](https://raw.githubusercontent.com/anubhavashok/WordGraph/master/docs/graphExample.png "graph")
+
+![graph](https://raw.githubusercontent.com/anubhavashok/WordGraph/master/docs/graphExample.png "graph")
