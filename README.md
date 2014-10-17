@@ -7,11 +7,11 @@ Uses OrientDB to visualize graphs
 
 # Example
 
-''' SQL
+``` SQL
 INSERT "Mary had a little lamb"
 
 INSERT "Mary was a little girl"
-'''
+```
 
 Graph:
 
