@@ -7,12 +7,17 @@
 //
 
 #include <iostream>
+#include "wordgraph.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    WordGraph wordGraph;
+    
+    wordGraph.indexDoc("Mary was a little girl");
+    wordGraph.indexDoc("Mary had a little lamb");
+    // wordGraph.printGraph();
+    wordGraph.outputToOrientDBFormat("/Users/anubhav/Desktop/WordGraph/graph.json");
     return 0;
 }
 

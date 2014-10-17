@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		44345A1C19F044B20025080B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44345A1B19F044B20025080B /* main.cpp */; };
 		44345A1E19F044B20025080B /* WordGraph.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44345A1D19F044B20025080B /* WordGraph.1 */; };
+		44345A2619F044C20025080B /* wordgraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44345A2419F044C20025080B /* wordgraph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		44345A1819F044B20025080B /* WordGraph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordGraph; sourceTree = BUILT_PRODUCTS_DIR; };
 		44345A1B19F044B20025080B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		44345A1D19F044B20025080B /* WordGraph.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WordGraph.1; sourceTree = "<group>"; };
+		44345A2419F044C20025080B /* wordgraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wordgraph.cpp; sourceTree = "<group>"; };
+		44345A2519F044C20025080B /* wordgraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordgraph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				44345A1B19F044B20025080B /* main.cpp */,
+				44345A2419F044C20025080B /* wordgraph.cpp */,
+				44345A2519F044C20025080B /* wordgraph.h */,
 				44345A1D19F044B20025080B /* WordGraph.1 */,
 			);
 			path = WordGraph;
@@ -117,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44345A2619F044C20025080B /* wordgraph.cpp in Sources */,
 				44345A1C19F044B20025080B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +203,21 @@
 		44345A2219F044B20025080B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/boost/1.55.0_2/include/,
+					/Users/anubhav/jsoncpp/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/boost/1.55.0_2/lib,
+					/Users/anubhav/jsoncpp/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-ljsoncpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +225,21 @@
 		44345A2319F044B20025080B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/boost/1.55.0_2/include/,
+					/Users/anubhav/jsoncpp/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/boost/1.55.0_2/lib,
+					/Users/anubhav/jsoncpp/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-ljsoncpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +263,7 @@
 				44345A2319F044B20025080B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
