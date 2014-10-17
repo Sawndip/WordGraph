@@ -1,12 +1,17 @@
 WordGraph
 =========
 
-Generates a word traversal graph from multiple documents. Helps to identify relationships between words and the context they're used in
+Generates a word traversal graph from multiple documents. Helps to identify relationships between words and the context they're used in.
 
-*Example
+Uses OrientDB to visualize graphs
 
-Doc 1: "Mary had a little lamb"
-Doc 2: "Mary was a little girl"
+# Example
+
+''' SQL
+INSERT "Mary had a little lamb"
+
+INSERT "Mary was a little girl"
+'''
 
 Graph:
 
